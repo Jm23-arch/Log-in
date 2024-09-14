@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>JM GADGETS</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>JM GADGETS</h1>
+            <p>Reliable Phones and Other Gadgets.</p>
+            <form>
+                <i class="bx bxs-user"></i>
+                <input type="text" placeholder="Username" class="input-field">
+                <div class="password-container">
+                    <i class="bx bx-lock-alt"></i>
+                    <input type="password" id="password" placeholder="Password" class="input-field">
+                    <label class="password-toggle">
+                        <input type="checkbox" id="toggle-password">
+                        <span>Show</span>
+                    </label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember Me</label>
+                    <a href="" class="forgot-password">Forgot Password</a>
+                </div>
+                <button type="submit" class="btn">SIGN IN</button>
+            </form>
+            <p class="or">Visit Us At;</p>
+            <div class="social-login">
+                <button class="social-btn facebook">Facebook</button>
+                <button class="social-btn instagram">Instagram</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggle-password').addEventListener('change', function() {
+            const passwordField = document.getElementById('password');
+            if (this.checked) {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        });
+    </script>
+</body>
+</html>
